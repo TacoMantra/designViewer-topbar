@@ -1,7 +1,15 @@
 @import (reference) "bootstrap/variables.less";
 @import (reference) "bootstrap/mixins.less";
-@import "bootstrap/normalize.less";
-@import "bootstrap/scaffolding.less";
+
+.breakpoint(@minWidth; @rules) {
+    @media only screen and (min-width: @minWidth) {
+        @rules();
+    }
+}
+
+@sm: 768px;
+@md: 992px;
+@lg: 1200px;
 
 /* Logo font */
 @font-face {
@@ -27,14 +35,48 @@ i.stylebar-logo {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	content: "\e604";
+	&:before {
+		content: "\e604";
+	}
 }
+
 
 /* Layout */
 .stylebar-wrapper {
-	height: 60px;
-	background: #333;
+	min-height: 60px;
+	background: #047cba;
+	margin: 0;
+	padding: 0;
+
+	a {
+		text-decoration: none;
+	}
 }
 .stylebar-container {
 	.container-fixed();
+	min-height: 60px;
+}
+.stylebar-row {
+	.make-row();
+}
+.stylebar-logo-container {
+	.make-sm-column(6);
+	text-align: center;
+
+    .breakpoint(@sm, {
+        text-align: left;
+    });
+}
+.stylebar-logo-link {
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 42px;
+    color: #FFF;
+
+    &:hover {
+    	color: #FFF;
+    	text-decoration: underline;
+    }
 }

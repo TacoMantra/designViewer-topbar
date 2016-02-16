@@ -4,8 +4,14 @@
 
 <link rel="stylesheet" href="css/stylebar2016.css">
 
-<div class="stylebar-wrapper">
+<nav class="stylebar-wrapper">
 	<div class="stylebar-container">
-		
-	</div>
-</div>
+		<div class="stylebar-row">
+			<div class="stylebar-logo-container">
+				<a href="http://www.cpasitesolutions.com/cpa-website-design/styles.php" class="stylebar-logo-link">
+					<i class="stylebar-logo"></i>
+				</a>
+			</div><!-- /stylebar-logo-container -->
+		</div><!-- /stylebar-row -->
+	</div><!-- /stylebar-container
+</nav><!-- /stylebar-wrapper -->
