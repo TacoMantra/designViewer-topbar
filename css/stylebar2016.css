@@ -1,1 +1,202 @@
-@font-face{font-family:'cpass-logo';src:url('../fonts/cpass-logo.eot?wovu0e');src:url('../fonts/cpass-logo.eot?#iefixwovu0e') format('embedded-opentype'),url('../fonts/cpass-logo.ttf?wovu0e') format('truetype'),url('../fonts/cpass-logo.woff?wovu0e') format('woff'),url('../fonts/cpass-logo.svg?wovu0e#cpass-logo') format('svg');font-weight:normal;font-style:normal}i.stylebar-logo{font-family:'cpass-logo';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}i.stylebar-logo:before{content:"\e604"}body{margin:0;padding:0}.stylebar-wrapper{min-height:60px;background:#047cba;margin:0;padding:0}.stylebar-wrapper a{text-decoration:none}.stylebar-container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;min-height:60px}.stylebar-row{margin-left:-15px;margin-right:-15px}.stylebar-logo-container{position:relative;min-height:1px;padding-left:15px;padding-right:15px;text-align:center}@media (min-width:768px){.stylebar-logo-container{float:left;width:50%}}@media only screen and (min-width:768px){.stylebar-logo-container{text-align:left}}.stylebar-logo-link{height:50px;line-height:50px;margin:10px 0;display:inline-block;font-size:42px;color:#FFF}.stylebar-logo-link:hover{color:#FFF;text-decoration:underline}
+/* Bootstrap Mixins */
+/* Font Awesome Mixins */
+/* Breakpoint Mixin */
+/* Breakpoints */
+/* Colors */
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+.stylebar-wrapper {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.stylebar-wrapper * {
+  box-sizing: border-box;
+}
+.stylebar-wrapper a {
+  color: #FFF!important;
+}
+/* Logo font */
+@font-face {
+  font-family: 'cpass-logo';
+  src: url('../fonts/cpass-logo.eot?wovu0e');
+  src: url('../fonts/cpass-logo.eot?#iefixwovu0e') format('embedded-opentype'), url('../fonts/cpass-logo.ttf?wovu0e') format('truetype'), url('../fonts/cpass-logo.woff?wovu0e') format('woff'), url('../fonts/cpass-logo.svg?wovu0e#cpass-logo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i.stylebar-logo {
+  font-family: 'cpass-logo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+i.stylebar-logo:before {
+  content: "\e601";
+}
+@media only screen and (min-width: 768px) {
+  i.stylebar-logo:before {
+    content: "\e604";
+  }
+}
+/* Layout */
+.stylebar-wrapper {
+  min-height: 60px;
+  background-color: #047cba;
+  margin: 0;
+  padding: 0;
+}
+.stylebar-wrapper a {
+  text-decoration: none;
+}
+.stylebar-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 60px;
+}
+.stylebar-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.stylebar-logo-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .stylebar-logo-container {
+    float: left;
+    width: 50%;
+  }
+}
+.stylebar-logo-link {
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 0;
+  display: inline-block;
+  font-size: 42px;
+  color: #FFF;
+}
+.stylebar-logo-link:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+.stylebar-contact-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .stylebar-contact-container {
+    float: left;
+    width: 50%;
+  }
+}
+.stylebar-phone-link {
+  line-height: 60px;
+}
+.stylebar-phone-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+.stylebar-phone-icon:before {
+  content: "\f10b";
+}
+.stylebar-getstarted-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  background: #df9310;
+  border-color: #df9310;
+  margin-left: 10px;
+  -webkit-transition: all 0.125s;
+          transition: all 0.125s;
+}
+.stylebar-getstarted-btn:focus,
+.stylebar-getstarted-btn:active:focus,
+.stylebar-getstarted-btn.active:focus,
+.stylebar-getstarted-btn.focus,
+.stylebar-getstarted-btn:active.focus,
+.stylebar-getstarted-btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.stylebar-getstarted-btn:hover,
+.stylebar-getstarted-btn:focus,
+.stylebar-getstarted-btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.stylebar-getstarted-btn:active,
+.stylebar-getstarted-btn.active {
+  outline: 0;
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.stylebar-getstarted-btn.disabled,
+.stylebar-getstarted-btn[disabled],
+fieldset[disabled] .stylebar-getstarted-btn {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+}
+a.stylebar-getstarted-btn.disabled,
+fieldset[disabled] a.stylebar-getstarted-btn {
+  pointer-events: none;
+}
+.stylebar-getstarted-btn:hover {
+  background: #F09F13;
+  border-color: #F09F13;
+}
+.stylebar-angle-right {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.stylebar-angle-right:before {
+  content: "\f105";
+}
