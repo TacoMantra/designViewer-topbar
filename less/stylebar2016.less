@@ -1,6 +1,8 @@
+/* Bootstrap Mixins */
 @import (reference) "bootstrap/variables.less";
 @import (reference) "bootstrap/mixins.less";
 
+/* Breakpoint Mixin */
 .breakpoint(@minWidth; @rules) {
     @media only screen and (min-width: @minWidth) {
         @rules();
@@ -40,6 +42,11 @@ i.stylebar-logo {
 	}
 }
 
+/* Reset */
+body {
+	margin: 0;
+	padding: 0;
+}
 
 /* Layout */
 .stylebar-wrapper {
