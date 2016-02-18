@@ -9,9 +9,14 @@
 	background-color: @bgcolor;
 	margin: 0;
 	padding: 0;
+	position: relative;
+	z-index: 100000000;
 
 	a {
 		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 .stylebar-container {
@@ -22,12 +27,12 @@
 	.make-row();
 }
 .stylebar-logo-container {
-	.make-sm-column(6);
+	.make-xs-column(6);
 }
 .stylebar-logo-link {
     height: 50px;
     line-height: 50px;
-    margin: 10px 0;
+    margin: 5px 0 0;
     display: inline-block;
     font-size: 42px;
     color: #FFF;
@@ -37,11 +42,14 @@
     }
 }
 .stylebar-contact-container {
-	.make-sm-column(6);
+	.make-xs-column(6);
 	text-align: right;
 }
 .stylebar-phone-link {
 	line-height: 60px;
+	.visible-sm-inline-block;
+	.visible-md-inline-block;
+	.visible-lg-inline-block;
 }
 .stylebar-phone-icon {
 	.fa-icon();
@@ -58,12 +66,16 @@
 	font-size: 16px;
 	background: @primary; 
 	border-color: @primary;
+	margin-top: 12px;
 	margin-left: 10px;
 	transition: all 0.125s;
 	&:hover {
 		background: @focus;
 		border-color: @focus;
 	}
+    .breakpoint(@sm, {
+		margin-top: -4px;
+    });
 }
 .stylebar-angle-right {
 	.fa-icon();
