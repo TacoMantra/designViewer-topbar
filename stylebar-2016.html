@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/scripts.js"></script>
+
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:400,300italic,300,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
 		<link rel="stylesheet" href="css/stylebar2016.css">
+
+		<!-- viewport meta to reset iPhone inital scale -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
@@ -17,6 +23,12 @@
 						</a>
 					</div><!-- /stylebar-logo-container -->
 
+					<div class="stylebar-viewport-container">
+						<a href="" class="stylebar-emulate-mobile"><i></i></a>
+						<a href="" class="stylebar-emulate-tablet"><i></i></a>
+						<a href="" class="stylebar-emulate-desktop"><i></i></a>
+					</div><!-- stylebar-viewport-container -->
+
 					<div class="stylebar-contact-container">
 						<a href="tel:+18008964500" class="stylebar-phone-link"><i class="stylebar-phone-icon"></i>(800) 896-4500</a>
 
@@ -25,5 +37,7 @@
 				</div><!-- /stylebar-row -->
 			</div><!-- /stylebar-container -->
 		</nav><!-- /stylebar-wrapper -->
+
+		<iframe id="stylebar-site-container" src="http://www.tgccpa.com/"></iframe>
 	</body>
 </html>
