@@ -2,12 +2,15 @@
 @import "variables.less";
 @import "reset.less";
 @import "typography.less";
+@import "viewport-resizer.less";
+@import "tooltips.less";
 
 /* Layout */
-body {
+body.stylebar {
 	background: #666;
 }
 .stylebar-wrapper {
+	display: none;
 	min-height: 60px;
 	background-color: @bgcolor;
 	margin: 0;
@@ -51,9 +54,19 @@ body {
 	text-align: center;
 	a {
 		display: inline-block;
-		margin: 0 15px;
-		line-height: 60px;
+		margin: 5px;
+		padding: 0px 10px;
+		line-height: 50px;
 		font-size: 36px;
+		border-radius: 4px;
+		transition: all 0.3s;
+		&:hover {
+			background: @recessed;
+		}
+		&.stylebar-active-device {
+			background: @recessed;
+			box-shadow: 0px 0px 5px @inset inset;
+		}
 	}
 }
 .stylebar-contact-container {
@@ -102,29 +115,43 @@ body {
 	}
 }
 #stylebar-site-container {
-	display: block;
+	width: 100%;
+	height: 100%;
+	background: #666;
+	text-align: center;
+	&.stylebar-mobile-landscape > #stylebar-site {
+		width: 627px;
+		height: 375px!important;
+		margin: 30px auto;
+	}
+	&.stylebar-mobile > #stylebar-site {
+		width: 375px;
+		height: 627px!important;
+		margin: 30px auto;
+	}
+	&.stylebar-tablet-landscape > #stylebar-site {
+		width: 1024px;
+		height: 768px!important;;
+		margin: 30px auto;
+	}
+	&.stylebar-tablet > #stylebar-site {
+		width: 768px;
+		height: 1024px!important;;
+		margin: 30px auto;
+	}
+	&.stylebar-desktop > #stylebar-site {
+		width: 100%;
+	}
+}
+#stylebar-site {
+	background: @neutral;
+	position: relative;
 	width: 100%; 
-	height: 2080px; 
 	margin: 0 auto;
 	overflow: hidden; 
 	box-sizing: border-box; 
 	border: 0px; 
 	outline: 0px;
+	box-shadow: 0px 0px 15px @shadow;
 	transition: all 0.6s;
-	&.stylebar-mobile {
-		width: 375px;
-		height: 627px;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	&.stylebar-tablet {
-		width: 768px;
-		height: 1024px;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	&.stylebar-desktop {
-		width: 100%;
-		height: 2066px;
-	}
 }

@@ -1,0 +1,35 @@
+.stylebar-viewport-container>a {
+	&>i {
+		.fa-icon();
+		position: relative;
+	}
+	&[class*=-landscape] {
+		padding: 0 15px;
+		&>i {
+			.fa-icon-rotate(90deg, 1);
+			left: -2px;
+		}
+	}
+}
+.stylebar-emulate-mobile-landscape>i:before{
+	content: "\f10b";
+	
+}
+.stylebar-emulate-mobile,
+.stylebar-emulate-mobile-landscape {
+	&>i:before {
+		content: "\f10b";
+	}
+}
+.stylebar-emulate-mobile-landscape>i {
+	top: 3px;
+}
+.stylebar-emulate-tablet,
+.stylebar-emulate-tablet-landscape {
+	&>i:before {
+		content: "\f10a";
+	}
+}
+.stylebar-emulate-desktop>i:before{
+	content: "\f26c";
+}
