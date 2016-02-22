@@ -565,3 +565,35 @@ fieldset[disabled] a.stylebar-getstarted-btn {
   -webkit-transition: all 0.6s;
           transition: all 0.6s;
 }
+#stylebar-site::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+#stylebar-site::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+#stylebar-site::-webkit-scrollbar-thumb {
+  background: #999;
+  border: 0px none #ffffff;
+  border-radius: 8px;
+}
+#stylebar-site::-webkit-scrollbar-thumb:hover {
+  background: #AAA;
+}
+#stylebar-site::-webkit-scrollbar-thumb:active {
+  background: #888;
+}
+#stylebar-site::-webkit-scrollbar-track {
+  background: #F0F0F0;
+  border: 0px none #ffffff;
+  border-radius: 8px;
+}
+#stylebar-site::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+  background: #E0E0E0;
+}
+#stylebar-site::-webkit-scrollbar-corner {
+  background: transparent;
+}

@@ -11,6 +11,8 @@
 
 		<!-- viewport meta to reset iPhone inital scale -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="robots" content="noindex">
 	</head>
 
 	<body>
@@ -24,9 +26,11 @@
 					</div><!-- /stylebar-logo-container -->
 
 					<div class="stylebar-viewport-container">
-						<a href="" class="stylebar-emulate-mobile"><i></i></a>
-						<a href="" class="stylebar-emulate-tablet"><i></i></a>
-						<a href="" class="stylebar-emulate-desktop"><i></i></a>
+						<a href="" class="stylebar-emulate-mobile-landscape stylebar-hasTooltip" title="Emulate Mobile Device - Landscape Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-mobile stylebar-hasTooltip" title="Emulate Mobile Device - Portrait Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-tablet-landscape stylebar-hasTooltip" title="Emulate Tablet Device - Landscape Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-tablet stylebar-hasTooltip" title="Emulate Tablet Device - Portait Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-desktop stylebar-active-device stylebar-hasTooltip" title="Show at Full Size"><i></i></a>
 					</div><!-- stylebar-viewport-container -->
 
 					<div class="stylebar-contact-container">
@@ -37,7 +41,5 @@
 				</div><!-- /stylebar-row -->
 			</div><!-- /stylebar-container -->
 		</nav><!-- /stylebar-wrapper -->
-
-		<iframe id="stylebar-site-container" src="http://www.tgccpa.com/"></iframe>
 	</body>
 </html>
