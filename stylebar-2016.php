@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- <script src="scripts/jquery.min.js"></script>
-		<script src="scripts/scripts.js"></script> -->
+		<script src="/stylebar/scripts/jquery.min.js"></script>
+		<script>var $jq1 = jQuery.noConflict();</script>
+		<script src="/stylebar/scripts/scripts.js"></script>
 
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:400,300italic,300,400italic,600,600italic' rel='stylesheet' type='text/css'>
@@ -10,7 +11,7 @@
 		<link rel="stylesheet" href="/stylebar/css/stylebar2016.css">
 
 		<!-- viewport meta to reset iPhone inital scale -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" id="stylebar-viewport-meta" content="">
 
 		<meta name="robots" content="noindex">
 	</head>

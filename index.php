@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/stylebar2016.css">
 
 		<!-- viewport meta to reset iPhone inital scale -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" id="stylebar-viewport-meta" content="">
 
 		<meta name="robots" content="noindex">
 	</head>
