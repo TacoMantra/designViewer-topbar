@@ -3,7 +3,7 @@
 	<head>
 		<script src="/stylebar/scripts/jquery.min.js"></script>
 		<script>var $jq1 = jQuery.noConflict();</script>
-		<script src="/stylebar/scripts/scripts.js"></script>
+		<script src="/stylebar/scripts/scripts.min.js"></script>
 
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:400,300italic,300,400italic,600,600italic' rel='stylesheet' type='text/css'>
@@ -12,11 +12,9 @@
 
 		<!-- viewport meta to reset iPhone inital scale -->
 		<meta name="viewport" id="stylebar-viewport-meta" content="">
-
-		<meta name="robots" content="noindex">
 	</head>
 
-	<body>
+	<body class="stylebar-body">
 		<nav class="stylebar-wrapper">
 			<div class="stylebar-container">
 				<div class="stylebar-row">
@@ -43,5 +41,4 @@
 			</div><!-- /stylebar-container -->
 		</nav><!-- /stylebar-wrapper -->
 	</body>
-	<script src="/stylebar/scripts/scripts.js"></script>
 </html>

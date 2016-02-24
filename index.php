@@ -15,7 +15,7 @@
 		<meta name="robots" content="noindex">
 	</head>
 
-	<body>
+	<body class="stylebar">
 		<nav class="stylebar-wrapper">
 			<div class="stylebar-container">
 				<div class="stylebar-row">
