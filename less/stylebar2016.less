@@ -6,19 +6,15 @@
 @import "tooltips.less";
 
 /* Layout */
-body.stylebar-resp {
+.stylebar-resp {
 	background: @neutral!important;
-	overflow: auto;
-	&.stylebar-resp-desktop {
-		overflow: hidden;
-	}
 	.stylebar-viewport-container {
 		a {
 			display: inline-block;
 		}		
 	}
 }
-body.stylebar-iframe {
+.stylebar-iframe {
 	overflow: auto;
 	overflow-x: hidden;
 }
@@ -133,6 +129,10 @@ body.stylebar-iframe {
 	height: 100%;
 	background: @neutral;
 	text-align: center;
+	overflow: auto;
+	&.stylebar-desktop {
+		overflow: hidden;
+	}
 	&.stylebar-mobile-landscape > #stylebar-site {
 		width: 627px;
 		height: 375px!important;

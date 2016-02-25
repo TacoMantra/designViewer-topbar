@@ -32,11 +32,11 @@ $jq1(document).ready(function(){
 		if (responsive == 'true')
 		{
 			// Wrap the contents in an iframe
-			$jq1('.stylebar-wrapper').nextAll().wrapAll('<div id="stylebar-site-container" class="stylebar-desktop"><iframe id="stylebar-site" src="' + url + '?iframe=true" style="height: ' + height + 'px"></iframe></div>');
+			$jq1('.stylebar-body').nextAll().wrapAll('<div id="stylebar-site-container" class="stylebar-desktop"><iframe id="stylebar-site" src="' + url + '?iframe=true" style="height: ' + height + 'px"></iframe></div>');
 			// Set the height of the iframe to the height of the content
 			$jq1('#stylebar-site-container').height(height);
 			// Show the device icons
-			$jq1('body').addClass('stylebar-resp stylebar-resp-desktop');
+			$jq1('.stylebar-body, #stylebar-site-container').addClass('stylebar-resp stylebar-resp-desktop');
 			// Set the viewport meta
 			$jq1('#stylebar-viewport-meta').attr('content', 'width=device-width, initial-scale=1.0');			
 		}
