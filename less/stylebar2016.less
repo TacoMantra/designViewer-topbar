@@ -6,10 +6,21 @@
 @import "tooltips.less";
 
 /* Layout */
-body.stylebar-iframe {
-	.breakpoint(@lg, {
+body.stylebar-resp {
+	background: @neutral!important;
+	overflow: auto;
+	&.stylebar-resp-desktop {
 		overflow: hidden;
-    });
+	}
+	.stylebar-viewport-container {
+		a {
+			display: inline-block;
+		}		
+	}
+}
+body.stylebar-iframe {
+	overflow: auto;
+	overflow-x: hidden;
 }
 .stylebar-wrapper {
 	display: none;
@@ -56,6 +67,7 @@ body.stylebar-iframe {
 	text-align: center;
 	a {
 		display: none;
+		outline: none!important;
 		margin: 5px;
 		padding: 0px 10px;
 		line-height: 50px;
@@ -68,11 +80,6 @@ body.stylebar-iframe {
 		&.stylebar-active-device {
 			background: @recessed;
 			box-shadow: 0px 0px 5px @inset inset;
-		}
-	}
-	&.stylebar-resp {
-		a {
-			display: inline-block;
 		}
 	}
 }
