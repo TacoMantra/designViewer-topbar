@@ -9,13 +9,13 @@ session_start();
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:400,300italic,300,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="/stylebar/css/stylebar2016.css">
+<link rel="stylesheet" href="/stylebar/css/stylebar2016.css?v=20160301">
 
 <!-- viewport meta to reset iPhone inital scale -->
 <meta name="viewport" id="stylebar-viewport-meta" content="">
 
-<div class="stylebar-body">
-	<nav class="stylebar-wrapper">
+<nav class="stylebar-body" id="stylebar">
+	<div class="stylebar-wrapper">
 		<div class="stylebar-container">
 			<div class="stylebar-row">
 				<div class="stylebar-logo-container">
@@ -39,5 +39,5 @@ session_start();
 				</div><!-- /stylebar-phone-container -->
 			</div><!-- /stylebar-row -->
 		</div><!-- /stylebar-container -->
-	</nav><!-- /stylebar-wrapper -->
-</div>
+	</div><!-- /stylebar-wrapper -->
+</nav>

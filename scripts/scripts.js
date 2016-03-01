@@ -36,7 +36,7 @@ $jq1(document).ready(function(){
 			// Set the height of the iframe to the height of the content
 			$jq1('#stylebar-site-container').height(height);
 			// Show the device icons
-			$jq1('.stylebar-body, #stylebar-site-container').addClass('stylebar-resp stylebar-resp-desktop');
+			$jq1('body, .stylebar-body, #stylebar-site-container').addClass('stylebar-resp stylebar-resp-desktop');
 			// Set the viewport meta
 			$jq1('#stylebar-viewport-meta').attr('content', 'width=device-width, initial-scale=1.0');			
 		}

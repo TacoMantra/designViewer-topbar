@@ -6,8 +6,15 @@
 @import "tooltips.less";
 
 /* Layout */
+#stylebar {
+	overflow: visible;
+}
 .stylebar-resp {
 	background: @neutral!important;
+	overflow: hidden;
+	&.stylebar-body {
+		overflow: visible;
+	}
 	.stylebar-viewport-container {
 		a {
 			display: inline-block;
@@ -22,6 +29,7 @@
 	display: none;
 	min-height: 60px;
 	background-color: @bgcolor;
+	border-bottom: 1px solid @shadow;
 	margin: 0;
 	padding: 0;
 	position: relative;
