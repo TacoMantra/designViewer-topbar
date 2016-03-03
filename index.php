@@ -14,8 +14,8 @@ session_start();
 	<!-- viewport meta to reset iPhone inital scale -->
 	<meta name="viewport" id="stylebar-viewport-meta" content="">
 
-	<div class="stylebar-body">
-		<nav class="stylebar-wrapper">
+	<nav class="stylebar-body" id="stylebar">
+		<div class="stylebar-wrapper">
 			<div class="stylebar-container">
 				<div class="stylebar-row">
 					<div class="stylebar-logo-container">
@@ -39,7 +39,7 @@ session_start();
 					</div><!-- /stylebar-phone-container -->
 				</div><!-- /stylebar-row -->
 			</div><!-- /stylebar-container -->
-		</nav><!-- /stylebar-wrapper -->
-	</div>
+		</div><!-- /stylebar-wrapper -->
+	</nav>
 
 	<?php include('sample.php'); ?>

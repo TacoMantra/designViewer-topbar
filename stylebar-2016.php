@@ -9,7 +9,7 @@ session_start();
 <!-- Google Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,100|Open+Sans:400,300italic,300,400italic,600,600italic' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="/stylebar/css/stylebar2016.css?v=20160301">
+<link rel="stylesheet" href="/stylebar/css/stylebar2016.css?v=20160303">
 
 <!-- viewport meta to reset iPhone inital scale -->
 <meta name="viewport" id="stylebar-viewport-meta" content="">
