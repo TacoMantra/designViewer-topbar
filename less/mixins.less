@@ -10,3 +10,40 @@
         @rules();
     }
 }
+
+.textHover(@baseColor, @hoverColor) {
+	color: @baseColor;
+	&:hover {
+		color: @hoverColor;
+	}
+}
+
+/* Device Accent Features */
+.device-speaker(@size, @posX, @posY) {
+	content: "";
+	display: block;
+	width: @size;
+	height: @size;
+	background: @bgcolor;
+	border-radius: 50%;
+	position: absolute;
+	top: @posY;
+	left: @posX;
+	margin-left: @size/2;
+	z-index: 1;
+} 
+.device-ring(@size, @posX, @posY) {
+	content: "";
+	display: block;
+	width: @size;
+	height: @size;
+	background: transparent;
+	border: 2px solid #BBB;
+	border-radius: 50%;
+	position: absolute;
+	top: @posY;
+	left: @posX;
+	margin-left: @size/2*-1;
+	z-index: 1;
+}
+
