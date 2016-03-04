@@ -70,29 +70,16 @@ $(document).ready(function(){
 	/*******************
 		Selector
 	*******************/
-	function updateIframe(layout) {
-		$('#stylebar-site').attr('src', layout);
+	function updateIframe(url) {
+		$('#stylebar-site').attr('src', url);
 	} 
 
-	$('#stylebar-selector').change(function()
+	$('#stylebar-selector').keydown(function(e)
 	{
-		var selected = $("option:selected", this).val();
-
-		switch (selected) {
-			case 'base1':
-				updateIframe('http://fleck10346.td.prosites.com/');
-				break;
-			case 'base2':
-				updateIframe('http://cpasitesolutions.com/');
-				break; 
-			case 'base3':
-				updateIframe('http://prosites.com/');
-				break; 
-			case 'base4':
-				updateIframe('http://dev.accountant-finder.com/');
-				break; 
-			default:
-				updateIframe('http://fleck10346.td.prosites.com/');
+		if ( e.which == 9 || e.which == 13 ) 
+		{
+			var enteredUrl = $(this).val().replace('http://', '');
+			updateIframe('http://' + enteredUrl);
 		}
 	});
 });
