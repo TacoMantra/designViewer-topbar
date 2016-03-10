@@ -70,11 +70,11 @@ $(document).ready(function(){
 	/*******************
 		Selector
 	*******************/
-	var startUrl = getQueryVariable('url').replace('http://', '');
+	var startUrl = getQueryVariable('url');
 
 	if ( startUrl.length > 0 ) 
 	{
-		updateIframe('http://' + startUrl);
+		updateIframe('http://' + startUrl.replace('http://', ''));
 		$('#stylebar-selector').val(startUrl);
 	}
 
