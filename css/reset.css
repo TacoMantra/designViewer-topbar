@@ -1,0 +1,17 @@
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+.stylebar-wrapper {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.stylebar-wrapper * {
+  box-sizing: border-box;
+}
+.stylebar-wrapper a {
+  color: #FFF;
+}
+/*# sourceMappingURL=reset.css.map */

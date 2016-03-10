@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: #e4e4e4;
+  color: #FFF;
 }
 .stylebar-wrapper {
   font-family: 'Open Sans', sans-serif;
@@ -17,9 +17,6 @@ body {
   box-sizing: border-box;
 }
 .stylebar-wrapper a {
-  color: #e4e4e4;
-}
-.stylebar-wrapper a:hover {
   color: #FFF;
 }
 /* Font Awesome */
@@ -218,8 +215,33 @@ body {
 .fa-television:before {
   content: "\f26c";
 }
-.stylebar-contrast {
-  color: #009ddc;
+/* Logo font */
+@font-face {
+  font-family: 'cpass-logo';
+  src: url('../fonts/cpass-logo.eot?wovu0e');
+  src: url('../fonts/cpass-logo.eot?#iefixwovu0e') format('embedded-opentype'), url('../fonts/cpass-logo.ttf?wovu0e') format('truetype'), url('../fonts/cpass-logo.woff?wovu0e') format('woff'), url('../fonts/cpass-logo.svg?wovu0e#cpass-logo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i.stylebar-logo {
+  font-family: 'cpass-logo';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+i.stylebar-logo:before {
+  content: "\e601";
+}
+@media only screen and (min-width: 768px) {
+  i.stylebar-logo:before {
+    content: "\e604";
+  }
 }
 .stylebar-viewport-container > a > i {
   display: inline-block;
@@ -260,8 +282,8 @@ body {
 .stylebar-tooltip {
   display: none;
   position: absolute;
-  border: 1px solid #3b3b3b;
-  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #191919;
+  background-color: #191919;
   border-radius: 5px;
   padding: 10px;
   color: #fff;
@@ -271,7 +293,7 @@ body {
 #stylebar-site-container {
   width: 100%;
   height: 100%;
-  background: #BBB;
+  background: #999;
   text-align: center;
   overflow: auto;
   position: relative;
@@ -366,7 +388,7 @@ body {
   overflow: visible;
 }
 .stylebar-resp {
-  background: #BBB !important;
+  background: #999 !important;
   overflow: hidden;
 }
 .stylebar-resp.stylebar-body {
@@ -377,7 +399,7 @@ body {
 }
 .stylebar-wrapper {
   min-height: 60px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #047cba;
   border-bottom: 1px solid #444;
   margin: 0;
   padding: 0;
@@ -525,61 +547,28 @@ body {
   padding: 0px 10px;
   line-height: 60px;
   font-size: 36px;
-  color: #e4e4e4;
   border-radius: 4px;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
 }
 .stylebar-viewport-container a:hover {
-  color: #FFF;
-}
-.stylebar-viewport-container a:hover {
-  background: rgba(89, 89, 89, 0.8);
+  background: #036ba1;
 }
 .stylebar-viewport-container a.stylebar-active-device {
-  background: rgba(89, 89, 89, 0.8);
-  box-shadow: 0px 0px 5px rgba(69, 69, 69, 0.8) inset;
+  background: #036ba1;
+  box-shadow: 0px 0px 5px #035179 inset;
 }
 .stylebar-logo-link {
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px 0 0;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 25px;
-  color: #e4e4e4;
-  letter-spacing: .5px;
-}
-.stylebar-logo-link:hover {
+  font-size: 32px;
   color: #FFF;
 }
 .stylebar-logo-link:hover {
-  color: #e4e4e4;
+  color: #FFF;
   text-decoration: underline;
-}
-.stylebar-logo-link img {
-  height: 38px;
-  width: auto;
-  display: inline-block;
-  margin-bottom: -11px;
-}
-.stylebar-logo-link span {
-  display: none !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .stylebar-logo-link span {
-    display: inline-block !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .stylebar-logo-link span {
-    display: inline-block !important;
-  }
-}
-@media (min-width: 1200px) {
-  .stylebar-logo-link span {
-    display: inline-block !important;
-  }
 }
 .stylebar-selector {
   width: 260px;
@@ -589,13 +578,9 @@ body {
   padding: 0px 5px;
   border-radius: 4px;
   background: transparent;
-  color: #e4e4e4;
-  border: 1px solid #e4e4e4;
+  color: #FFF;
+  border: 1px solid #FFF;
   font-size: 16px;
-}
-.stylebar-selector option {
-  color: rgba(0, 0, 0, 0.8);
-  background: #e4e4e4;
 }
 .stylebar-phone-link {
   line-height: 60px;
@@ -626,8 +611,8 @@ a.stylebar-getstarted-btn {
   height: 34px;
   margin: 12px 0;
   background: transparent;
-  border-color: #009ddc;
-  color: #009ddc;
+  border-color: #df9310;
+  color: #df9310;
   font-weight: 700;
   -webkit-transition: all 0.125s;
           transition: all 0.125s;
@@ -667,7 +652,7 @@ fieldset[disabled] aa.stylebar-getstarted-btn {
   pointer-events: none;
 }
 a.stylebar-getstarted-btn:hover {
-  background: #00aff6;
-  border-color: #00aff6;
+  background: #efa01a;
+  border-color: #efa01a;
   color: #FFF;
 }

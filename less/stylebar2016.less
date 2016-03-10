@@ -86,7 +86,6 @@ body {
 		padding: 0px 10px;
 		line-height: 60px;
 		font-size: 36px;
-		.textHover(@text, @textHover);
 		border-radius: 4px;
 		transition: all 0.3s;
 		&:hover {
@@ -99,28 +98,15 @@ body {
 	}
 }
 .stylebar-logo-link {
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px 0 0;
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 25px;
-    .textHover(@text, @textHover);
-    letter-spacing: .5px;
+    font-size: 32px;
+    color: #FFF;
     &:hover {
-    	color: @text;
+    	color: #FFF;
     	text-decoration: underline;
-    }
-    img {
-    	height: 38px;
-    	width: auto;
-    	display: inline-block;
-    	margin-bottom: -11px;
-    }
-    span {
-    	.visible-sm-inline-block;
-    	.visible-md-inline-block;
-    	.visible-lg-inline-block;
     }
 }
 .stylebar-selector {
@@ -131,13 +117,9 @@ body {
 	padding: 0px 5px;
 	border-radius: 4px;
 	background: transparent;
-	color: @text;
-	border: 1px solid @text;
+	color: #FFF;
+	border: 1px solid #FFF;
 	font-size: 16px;
-	option {
-		color: @bgcolor;
-		background: @text;
-	}
 }
 .stylebar-phone-link {
 	line-height: 60px;
