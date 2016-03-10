@@ -534,11 +534,11 @@ body {
   color: #FFF;
 }
 .stylebar-viewport-container a:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(89, 89, 89, 0.8);
 }
 .stylebar-viewport-container a.stylebar-active-device {
-  background: rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8) inset;
+  background: rgba(89, 89, 89, 0.8);
+  box-shadow: 0px 0px 5px rgba(69, 69, 69, 0.8) inset;
 }
 .stylebar-logo-link {
   height: 60px;

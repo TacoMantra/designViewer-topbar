@@ -70,6 +70,14 @@ $(document).ready(function(){
 	/*******************
 		Selector
 	*******************/
+	var startUrl = getQueryVariable('url').replace('http://', '');
+
+	if ( startUrl.length > 0 ) 
+	{
+		updateIframe('http://' + startUrl);
+		$('#stylebar-selector').val(startUrl);
+	}
+
 	function updateIframe(url) {
 		$('#stylebar-site').attr('src', url);
 	} 
@@ -82,4 +90,17 @@ $(document).ready(function(){
 			updateIframe('http://' + enteredUrl);
 		}
 	});
+
+
+	// Parse all query string vars
+	function getQueryVariable(variable)
+	{
+	       var query = window.location.search.substring(1);
+	       var vars = query.split("&");
+	       for (var i=0;i<vars.length;i++) {
+	               var pair = vars[i].split("=");
+	               if(pair[0] == variable){return pair[1];}
+	       }
+	       return(false);
+	}
 });
