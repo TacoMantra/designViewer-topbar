@@ -38,6 +38,16 @@ $(document).ready(function(){
 		$(this).addClass('stylebar-active-device');
 	});
 
+	// Assign the device by query string
+	var device = getQueryVariable('device');
+	if ( device.length > 0 && device !== 'desktop')	
+	{
+		viewportResize(device);
+		var deviceIcon = $('.stylebar-emulate-' + device)
+		$('.stylebar-active-device').removeClass('stylebar-active-device');
+		deviceIcon.addClass('stylebar-active-device');
+	}
+
 
 	/*******************
 		Tooltips
@@ -70,11 +80,11 @@ $(document).ready(function(){
 	/*******************
 		Selector
 	*******************/
-	var startUrl = getQueryVariable('url').replace('http://', '');
+	var startUrl = getQueryVariable('url');
 
 	if ( startUrl.length > 0 ) 
 	{
-		updateIframe('http://' + startUrl);
+		updateIframe('http://' + startUrl.replace('http://', ''));
 		$('#stylebar-selector').val(startUrl);
 	}
 
