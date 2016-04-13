@@ -48,19 +48,18 @@ body {
 	.make-row();
 }
 .stylebar-logo-container {
-	.make-xs-column(2);
-	.make-sm-column(4);
-	.make-lg-column(3);
+	.make-xs-column(6);
+	.make-sm-column(8);
+	.make-lg-column(4);
 }
 .stylebar-controls-container {
-	.make-xs-column(5);
+	.make-xs-column(6);
 	.make-sm-column(4);
 	.make-lg-column(6);
 }
 .stylebar-contact-container {
-	.make-xs-column(5);
-	.make-sm-column(4);
-	.make-lg-column(3);
+	.visible-lg;
+	.make-lg-column(2);
 	text-align: right;
 }
 .stylebar-controls {
@@ -116,6 +115,9 @@ body {
     	.visible-sm-inline-block;
     	.visible-md-inline-block;
     	.visible-lg-inline-block;
+    }
+    small {
+    	font-size: 16px;
     }
 }
 .stylebar-selector {

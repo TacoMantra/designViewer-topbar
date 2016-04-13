@@ -80,19 +80,19 @@ $(document).ready(function(){
 
 		switch (selected) {
 			case 'base1':
-				updateIframe('http://fleck10346.td.prosites.com/');
+				updateIframe('http://baselayouts53354.td.prosites.com/');
 				break;
 			case 'base2':
-				updateIframe('http://cpasitesolutions.com/');
+				updateIframe('http://baselayouts70584.td.prosites.com/');
 				break; 
 			case 'base3':
-				updateIframe('http://prosites.com/');
+				updateIframe('http://baselayouts20395.td.prosites.com/');
 				break; 
 			case 'base4':
-				updateIframe('http://dev.accountant-finder.com/');
+				updateIframe('http://baselayouts37025.td.prosites.com/');
 				break; 
 			default:
-				updateIframe('http://fleck10346.td.prosites.com/');
+				updateIframe('http://baselayouts53354.td.prosites.com/');
 		}
 	});
 });
