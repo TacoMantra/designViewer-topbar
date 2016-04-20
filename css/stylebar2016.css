@@ -590,9 +590,14 @@ body {
   color: #e4e4e4;
   border: 1px solid #e4e4e4;
 }
-.stylebar-selector option {
+.stylebar-selector optgroup {
   color: rgba(0, 0, 0, 0.8);
   background: #e4e4e4;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.stylebar-selector option {
+  font-weight: normal;
 }
 @breakpoint (@md) {
   width: 75%;

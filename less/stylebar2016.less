@@ -128,9 +128,14 @@ body {
 	background: transparent;
 	color: @text;
 	border: 1px solid @text;
-	option {
+	optgroup {
 		color: @bgcolor;
 		background: @text;
+		font-weight: bold;
+		margin: 10px 0;
+	}
+	option {
+		font-weight: normal;
 	}
 	@breakpoint(@md) {
 		width: 75%;
