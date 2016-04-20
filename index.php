@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<script src="scripts/jquery.min.js"></script>
+	<script src="scripts/bootstrap.min.js"></script>
 	<script src="scripts/scripts.min.js"></script>
 
 	<!-- Google Fonts -->
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Montserrat:700,400|Architects+Daughter">
 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/stylebar2016.css">
 
 	<!-- viewport meta to reset iPhone inital scale -->
@@ -31,8 +33,14 @@
 					<div class="stylebar-controls-container">
 						<div class="stylebar-controls">
 							<div class="stylebar-selector-container">
-								<label for="stylebar-selector">http://</label>
-								<input type="text" name="stylebar-selector" id="stylebar-selector" class="stylebar-selector" value="cpasitesolutions.com">
+								<label for="stylebar-selector">Compare to: </label>
+								<select name="stylebar-selector" id="stylebar-selector" class="stylebar-selector">
+									<option value="">Select a Design...</option>
+									<option value="580">Design #580</option>
+									<option value="589">Design #589</option>
+									<option value="561">Design #561</option>
+									<option value="529">Design #529</option	>
+								</select>
 							</div><!-- /stylebar-selector-container -->
 
 							<div class="stylebar-viewport-container">
@@ -54,7 +62,26 @@
 	</nav>
 
 	<div id="stylebar-site-container" class="stylebar-desktop stylebar-resp">
-		<iframe id="stylebar-site" src="http://www.cpasitesolutions.com"></iframe>
+		<iframe id="stylebar-site" src="http://samples.cpasitesolutions.com/sample589/"></iframe>
+	</div>
+
+	<a href="#" class="tester-cta" data-toggle="modal" data-target="#requestDemo">Request a FREE Demo</a>
+
+	<!-- Modal -->
+	<div class="modal fade" id="requestDemo" tabindex="-1" role="dialog" aria-labelledby="requestDemo-label">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h3 class="modal-title" id="requestDemo-label">Request a Demo</h3>
+	      </div>
+	      <div class="modal-body">
+	        <?
+              ShowLeadForm("crm", "/getstarted.php", false, true, "Request Your FREE Demo", "large");
+            ?>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 </body>
 </html>

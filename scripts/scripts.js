@@ -80,24 +80,38 @@ $(document).ready(function(){
 	/*******************
 		Selector
 	*******************/
-	var startUrl = getQueryVariable('url');
+	var queryUrl = getQueryVariable('url');
+	var startUrl = 'http://samples.cpasitesolutions.com/sample580/';
 
-	if ( startUrl.length > 0 ) 
+	if ( queryUrl.length > 0 ) 
 	{
-		updateIframe('http://' + startUrl.replace('http://', ''));
-		$('#stylebar-selector').val(startUrl);
+		startUrl = 'http://' + queryUrl.replace('http://', '');
+		updateIframe(startUrl);
 	}
 
 	function updateIframe(url) {
 		$('#stylebar-site').attr('src', url);
 	} 
 
-	$('#stylebar-selector').keydown(function(e)
+	$('#stylebar-selector').change(function()
 	{
-		if ( e.which == 9 || e.which == 13 ) 
-		{
-			var enteredUrl = $(this).val().replace('http://', '');
-			updateIframe('http://' + enteredUrl);
+		var selected = $("option:selected", this).val();
+
+		switch (selected) {
+			case '580':
+				updateIframe('http://samples.cpasitesolutions.com/sample580/');
+				break;
+			case '589':
+				updateIframe('http://samples.cpasitesolutions.com/sample589/');
+				break; 
+			case '561':
+				updateIframe('http://samples.cpasitesolutions.com/sample561/');
+				break; 
+			case '529':
+				updateIframe('http://samples.cpasitesolutions.com/sample529/');
+				break; 
+			default:
+				updateIframe(startUrl);
 		}
 	});
 
