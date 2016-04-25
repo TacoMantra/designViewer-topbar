@@ -104,11 +104,11 @@ $(document).ready(function(){
 			case '589':
 				updateIframe('http://samples.cpasitesolutions.com/sample589/');
 				break; 
-			case '561':
-				updateIframe('http://samples.cpasitesolutions.com/sample561/');
+			case '554':
+				updateIframe('http://samples.cpasitesolutions.com/sample554/');
 				break; 
-			case '529':
-				updateIframe('http://samples.cpasitesolutions.com/sample529/');
+			case '541':
+				updateIframe('http://samples.cpasitesolutions.com/sample541/');
 				break; 
 			default:
 				updateIframe(startUrl);

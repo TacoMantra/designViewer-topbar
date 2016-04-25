@@ -38,8 +38,8 @@
 									<option value="">Select a Design...</option>
 									<option value="580">Design #580</option>
 									<option value="589">Design #589</option>
-									<option value="561">Design #561</option>
-									<option value="529">Design #529</option	>
+									<option value="554">Design #554</option>
+									<option value="541">Design #541</option	>
 								</select>
 							</div><!-- /stylebar-selector-container -->
 
