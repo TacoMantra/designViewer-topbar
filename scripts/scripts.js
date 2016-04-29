@@ -70,10 +70,10 @@ $(document).ready(function(){
         $('.stylebar-tooltip').remove();
 	}).mousemove(function(e) 
 	{
-        var mousex = e.pageX; //Get X coordinates
-        var mousey = e.pageY + 10; //Get Y coordinates
-        $('.stylebar-tooltip')
-        .css({ top: mousey, left: mousex })
+		var ttWidth = $('.stylebar-tooltip').width();
+        var mousex = e.pageX - ttWidth; //Get X coordinates
+        var mousey = e.pageY + 20; //Get Y coordinates
+        $('.stylebar-tooltip').css({ top: mousey, left: mousex })
 	});
 
 
