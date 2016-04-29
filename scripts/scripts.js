@@ -120,6 +120,7 @@ $(document).ready(function(){
 	**********************/
 	var IMA = getQueryVariable('IMA');
 	var phoneLink = $('#stylebar-phone-link');
+	var phoneTarget = $('#stylebar-phone-target');
 
 	function updatePhone(phone) {
 		phoneLink.text(phone).attr('href', 'tel:+1' + phone.replace(/[^\w]/g, ''));
@@ -128,15 +129,19 @@ $(document).ready(function(){
 	switch (IMA) {
 		case 'Caitlin':
 			updatePhone('(802) 655-8001');
+			phoneTarget.text(IMA);
 			break;
 		case 'Erika':
 			updatePhone('(951) 395-8272');
+			phoneTarget.text(IMA);
 			break;
 		case 'Victoria':
 			updatePhone('(951) 395-8271');
+			phoneTarget.text(IMA);
 			break;
 		default:
 			updatePhone('(800) 896-4500');
+			phoneTarget.text('us');
 	}
 
 	// Parse all query string vars
