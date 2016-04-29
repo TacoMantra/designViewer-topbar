@@ -20,6 +20,9 @@
 </head>
 
 <body>
+	<div class="stylebar-contactbar">
+		Questions? Call us - <a href="tel:+18008964500" id="stylebar-phone-link"><i class="stylebar-phone-icon"></i></a>
+	</div>
 	<nav class="stylebar-body" id="stylebar">
 		<div class="stylebar-wrapper">
 			<div class="stylebar-container">
@@ -30,32 +33,24 @@
 						</a>
 					</div><!-- /stylebar-logo-container -->
 
-					<div class="stylebar-controls-container">
-						<div class="stylebar-controls">
-							<div class="stylebar-selector-container">
-								<label for="stylebar-selector">Compare to: </label>
-								<select name="stylebar-selector" id="stylebar-selector" class="stylebar-selector">
-									<option value="">Select a Design...</option>
-									<option value="580">Design #580</option>
-									<option value="589">Design #589</option>
-									<option value="554">Design #554</option>
-									<option value="541">Design #541</option	>
-								</select>
-							</div><!-- /stylebar-selector-container -->
+					<div class="stylebar-selector-container">
+						<label for="stylebar-selector">Compare to: </label>
+						<select name="stylebar-selector" id="stylebar-selector" class="stylebar-selector">
+							<option value="">Select a Mobile-Friendly Design...</option>
+							<option value="580">Design #580</option>
+							<option value="589">Design #589</option>
+							<option value="554">Design #554</option>
+							<option value="541">Design #541</option	>
+						</select>
+					</div><!-- /stylebar-selector-container -->
 
-							<div class="stylebar-viewport-container">
-								<a href="" class="stylebar-emulate-mobile-landscape stylebar-hasTooltip" title="Emulate Mobile Device - Landscape Orientation"><i></i></a>
-								<a href="" class="stylebar-emulate-mobile stylebar-hasTooltip" title="Emulate Mobile Device - Portrait Orientation"><i></i></a>
-								<a href="" class="stylebar-emulate-tablet-landscape stylebar-hasTooltip" title="Emulate Tablet Device - Landscape Orientation"><i></i></a>
-								<a href="" class="stylebar-emulate-tablet stylebar-hasTooltip" title="Emulate Tablet Device - Portait Orientation"><i></i></a>
-								<a href="" class="stylebar-emulate-desktop stylebar-active-device stylebar-hasTooltip" title="Show at Full Size"><i></i></a>
-							</div><!-- stylebar-viewport-container -->
-						</div><!-- /stylebar-controls -->
-					</div><!-- /stylebar-controls-container -->
-
-					<div class="stylebar-contact-container">
-						<a href="tel:+18008964500" class="stylebar-phone-link"><i class="stylebar-phone-icon"></i>(800) 896-4500</a>
-					</div><!-- /stylebar-phone-container -->
+					<div class="stylebar-viewport-container">
+						<a href="" class="stylebar-emulate-mobile-landscape stylebar-hasTooltip" title="Emulate Mobile Device - Landscape Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-mobile stylebar-hasTooltip" title="Emulate Mobile Device - Portrait Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-tablet-landscape stylebar-hasTooltip" title="Emulate Tablet Device - Landscape Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-tablet stylebar-hasTooltip" title="Emulate Tablet Device - Portait Orientation"><i></i></a>
+						<a href="" class="stylebar-emulate-desktop stylebar-active-device stylebar-hasTooltip" title="Show at Full Size"><i></i></a>
+					</div><!-- stylebar-viewport-container -->
 				</div><!-- /stylebar-row -->
 			</div><!-- /stylebar-container -->
 		</div><!-- /stylebar-wrapper -->

@@ -50,34 +50,39 @@ body {
 .stylebar-logo-container {
 	.make-xs-column(3);
 	.make-sm-column(6);
-	.make-lg-column(3);
+	.make-lg-column(4);
 }
-.stylebar-controls-container {
+// .stylebar-controls-container {
+// 	.make-xs-column(9);
+// 	.make-sm-column(6);
+// 	.make-lg-column(7);
+// }
+// .stylebar-contact-container {
+// 	.visible-lg;
+// 	.make-lg-column(2);
+// 	text-align: right;
+// }
+// .stylebar-controls {
+// 	.make-row();
+// }
+.stylebar-selector-container {
 	.make-xs-column(9);
 	.make-sm-column(6);
-	.make-lg-column(7);
-}
-.stylebar-contact-container {
-	.visible-lg;
-	.make-lg-column(2);
+	.make-lg-column(4);
 	text-align: right;
-}
-.stylebar-controls {
-	.make-row();
-}
-.stylebar-selector-container {
-	.make-xs-column(12);
-	.make-lg-column(6);
-	text-align: center;
 	label {
 		margin-right: 5px;
 		.hidden-xs;
+		.hidden-sm;
+	}
+	@media(min-width: @lg) {
+		text-align: center;
 	}
 }
 .stylebar-viewport-container {
 	.visible-lg;
-	.make-lg-column(6);
-	text-align: center;
+	.make-lg-column(4);
+	text-align: right;
 	a {
 		outline: none!important;
 		margin: 5px;
@@ -120,7 +125,7 @@ body {
 		background: @text;
 	}
 	@media(min-width: @sm) {
-		width: 220px;
+		width: 260px;
 	}
 }
 .stylebar-phone-link {
@@ -201,4 +206,10 @@ a.tester-cta {
 #btn-getstarted:hover {
   border-color: #F09F13;
   background-color: #F09F13;
+}
+.stylebar-contactbar {
+	background: @neutral-dark;
+	padding: 10px 15px;
+	text-align: center;
+	font-weight: bold;
 }

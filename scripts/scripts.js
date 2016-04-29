@@ -115,6 +115,29 @@ $(document).ready(function(){
 		}
 	});
 
+	/**********************
+		Dynamic Phone #
+	**********************/
+	var IMA = getQueryVariable('IMA');
+	var phoneLink = $('#stylebar-phone-link');
+
+	function updatePhone(phone) {
+		phoneLink.text(phone).attr('href', 'tel:+1' + phone.replace(/[^\w]/g, ''));
+	}
+
+	switch (IMA) {
+		case 'Caitlin':
+			updatePhone('(802) 655-8001');
+			break;
+		case 'Erika':
+			updatePhone('(951) 395-8272');
+			break;
+		case 'Victoria':
+			updatePhone('(951) 395-8271');
+			break;
+		default:
+			updatePhone('(800) 896-4500');
+	}
 
 	// Parse all query string vars
 	function getQueryVariable(variable)
