@@ -5,7 +5,8 @@ $jq1(document).ready(function(){
 
 	// Get url and viewport height
 	var url = window.location,
-		height = window.innerHeight - 60;
+		height = window.innerHeight - 60,
+		width = window.innerWidth;
 
 	// Parse all query string vars
 	function getQueryVariable(variable)
@@ -29,7 +30,7 @@ $jq1(document).ready(function(){
 		$jq1('.stylebar-wrapper').show();
 
 		// If design is responsive 
-		if (responsive == 'true')
+		if (responsive == 'true' && width > 1200)
 		{
 			// Wrap the contents in an iframe
 			$jq1('.stylebar-body').nextAll().wrapAll('<div id="stylebar-site-container" class="stylebar-desktop"><iframe id="stylebar-site" src="' + url + '?iframe=true" style="height: ' + height + 'px"></iframe></div>');
